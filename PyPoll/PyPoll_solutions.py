@@ -9,6 +9,6 @@ import os
 import csv
 
 # Path to collect data from the Resources folder
-poll_csv = os.path.join('02-Homework_03-Python_Instructions_PyPoll_Resources_election_data.csv')
+poll_csv = os.path.join("..", "Resources",'02-Homework_03-Python_Instructions_PyPoll_Resources_election_data.csv')
 
 
