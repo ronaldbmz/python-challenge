@@ -65,6 +65,17 @@ print(f"Greatest Increase in Profits: {greatest_increase_month} (${greatest_incr
 print(f"Greatest Decrease in Profits: {greatest_decrease_month} (${greatest_decrease_profit})")
 
 
+# Creating text file with the output
+with open('/Users/tiffanyelle/Desktop/Data Analysis/Data Analysis Boot Ca/1-Github/Repos/python-challenge/PyBank/analysis','w') as out:
+    out.write("Financial Analysis\n")
+    out.write("---------------------------------\n")
+    out.write(f"Total Months: {total_months}\n")
+    out.write(f"Total: ${net_total_amount}\n")
+    out.write(f"Average Change: ${average_change}\n")
+    out.write(f"Greatest Increase in Profits: {greatest_increase_month} (${greatest_increase_profit})\n")
+    out.write(f"Greatest Decrease in Profits: {greatest_decrease_month} (${greatest_decrease_profit})\n")
+    
+
 
       
             
