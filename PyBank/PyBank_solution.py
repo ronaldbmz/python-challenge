@@ -66,7 +66,7 @@ print(f"Greatest Decrease in Profits: {greatest_decrease_month} (${greatest_decr
 
 
 # Creating text file with the output
-with open('/Users/tiffanyelle/Desktop/Data Analysis/Data Analysis Boot Ca/1-Github/Repos/python-challenge/PyBank/analysis','w') as out:
+with open("/Users/tiffanyelle/Desktop/Data Analysis/Data Analysis Boot Ca/1-Github/Repos/python-challenge/PyBank/analysis/pybank analysis","w") as out:
     out.write("Financial Analysis\n")
     out.write("---------------------------------\n")
     out.write(f"Total Months: {total_months}\n")
