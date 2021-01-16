@@ -51,6 +51,26 @@ with open(bank_csv, 'r') as csvfile:
             greatest_decrease_profit = int(row[1])
             greatest_decrease_month = row[0]
             
+# Calculate the changes in "Profit/Losses" over the entire period, then find the average of those changes
+average_change = net_total_amount/total_months
+
+
+# Showing output in Terminal
+print("Financial Analysis")
+print("---------------------------------")
+print(f"Total Months: {total_months}")
+print(f"Total: ${net_total_amount}")
+print(f"Average Change: ${average_change}")
+print(f"Greatest Increase in Profits: {greatest_increase_month} (${greatest_increase_profit})")
+print(f"Greatest Decrease in Profits: {greatest_decrease_month} (${greatest_decrease_profit})")
+
+
+
+      
+            
+            
+
+            
             
 
             
