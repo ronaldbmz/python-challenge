@@ -10,7 +10,7 @@ import os
 import csv
 
 # Path to collect data from the Resources folder
-bank_csv = os.path.join("02-Homework_03-Python_Instructions_PyBank_Resources_budget_data.csv")
+bank_csv = os.path.join(os.getcwd(),"Resources","02-Homework_03-Python_Instructions_PyBank_Resources_budget_data.csv")
 
 
 #Variables
@@ -64,9 +64,10 @@ print(f"Average Change: ${average_change}")
 print(f"Greatest Increase in Profits: {greatest_increase_month} (${greatest_increase_profit})")
 print(f"Greatest Decrease in Profits: {greatest_decrease_month} (${greatest_decrease_profit})")
 
+bank_output = os.path.join(os.getcwd(),"analysis","pybank_analysis.txt")
 
 # Creating text file with the output
-with open("/Users/tiffanyelle/Desktop/Data Analysis/Data Analysis Boot Ca/1-Github/Repos/python-challenge/PyBank/analysis/pybank analysis","w") as out:
+with open(bank_output,"w") as out:
     out.write("Financial Analysis\n")
     out.write("---------------------------------\n")
     out.write(f"Total Months: {total_months}\n")
